@@ -7,16 +7,19 @@ const title = document.querySelector(".number-title");
 // creo costante container dei numeri
 const container = document.querySelector(".number-container");
 
-// creo array risposte esatte
-const correct = [];
+// creo costante risultato
+const finalResult = document.getElementById("risultato");
+
+// creo costante punteggio
+const points = document.getElementById("punti");
 
 // evento button
 button.addEventListener("click", 
     function() {
-        // rimuovo classe al container per mostrarlo
+        // rimuovo classe al container per reset
         container.classList.remove("d-flex");
 
-        // rimuovo classe al titolo per mostrarlo
+        // rimuovo classe al titolo per reset
         title.classList.remove("d-block");
 
         // reset
@@ -64,23 +67,40 @@ button.addEventListener("click",
         }
 
         // setto altro timeout un secondo dopo la scomparsa dei numeri che chiede le risposte all'utente
-        setTimeout(risposte, 4000);
+        setTimeout(risposte, 3500);
 
         function risposte() {
+
+            // reset
+            finalResult.innerHTML=`Numeri Indovinati:`;
+
+            // reset
+            points.innerHTML=` `;
+
+            // creo array risposte esatte
+            const correct = [];
 
             for (let i = 0; i < fiveNums.length; i++) {
 
                 let numUser = parseInt(prompt("inserisci numero"));
 
                 if (fiveNums.includes(numUser)) {
-
+                    correct.push(numUser);
                 }
             }
 
-            
+            // mostro i numeri indovinati
+            for (let i = 0; i < correct.length; i++) {
+                
+                finalResult.innerHTML+=` ${correct[i]} `;
+            }
+
+            // mostro i punti effettuati
+            points.innerHTML+=`Punti Effettuati: ${correct.length} `;
 
             
 
+            
         }
 
     }

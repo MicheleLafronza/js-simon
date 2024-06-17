@@ -72,3 +72,13 @@ p {
 .d-none {
     display: none;
 }
+
+#risultato {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#punti {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
