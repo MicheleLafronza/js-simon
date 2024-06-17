@@ -8,3 +8,23 @@
     font-style: normal;
 }
 
+/* regole main */
+main {
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    border: solid 2px black;
+    height: 500px;
+}
+
+/* regole number container */
+.number-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}   
+
+.box-numbers {
+    font-size: 2rem;
+}
