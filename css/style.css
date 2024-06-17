@@ -17,9 +17,25 @@ main {
     height: 500px;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#number-title {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* regole number container */
 .number-container {
-    display: flex;
+    display: none;
     justify-content: space-around;
     gap: 10px;
     margin-top: 20px;
@@ -27,4 +43,22 @@ main {
 
 .box-numbers {
     font-size: 2rem;
+}
+
+/* regole bottone */
+#play {
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    display: block;
+}
+
+#play:hover {
+    border: 2px solid yellow;
+    background-color: red;
+    cursor: pointer;
 }
