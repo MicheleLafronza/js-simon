@@ -12,9 +12,6 @@
 main {
     width: 80%;
     margin: 0 auto;
-    /* debug */
-    border: solid 2px black;
-    height: 500px;
 }
 
 h1 {
@@ -27,7 +24,7 @@ p {
     margin-top: 20px;
 }
 
-#number-title {
+.number-title {
     display: none;
     text-align: center;
     margin-top: 20px;
@@ -61,4 +58,17 @@ p {
     border: 2px solid yellow;
     background-color: red;
     cursor: pointer;
+}
+
+/* regole active */
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
 }
