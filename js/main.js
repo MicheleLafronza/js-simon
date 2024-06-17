@@ -53,7 +53,7 @@ button.addEventListener("click",
         }
 
         // timer 30 secondi, numeri scompaiono
-        setTimeout(simonSays, 3000);
+        setTimeout(simonSays, 30000);
 
         // avvio funzione che aggiunge classe con display none
         function simonSays() {
@@ -67,7 +67,7 @@ button.addEventListener("click",
         }
 
         // setto altro timeout un secondo dopo la scomparsa dei numeri che chiede le risposte all'utente
-        setTimeout(risposte, 3500);
+        setTimeout(risposte, 30500);
 
         function risposte() {
 
