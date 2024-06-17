@@ -105,14 +105,3 @@ button.addEventListener("click",
 
     }
 )
-
-
-
-
-
-
-// timer 30 secondi, numeri scompaiono
-
-// l'utente deve inserire uno alla volta i numeri
-
-// output di quali e quanti ne ha indovinati
